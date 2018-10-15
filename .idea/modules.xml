@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CVFACE.iml" filepath="$PROJECT_DIR$/.idea/modules/CVFACE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CVFACE_main.iml" filepath="$PROJECT_DIR$/.idea/modules/CVFACE_main.iml" group="CVFACE" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CVFACE_test.iml" filepath="$PROJECT_DIR$/.idea/modules/CVFACE_test.iml" group="CVFACE" />
+    </modules>
+  </component>
+</project>
