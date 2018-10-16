@@ -1,15 +1,22 @@
 package com.cvface.service.product.impl;
 
+import com.cvface.dao.product.ProductDao;
 import com.cvface.model.product.Product;
 import com.cvface.service.product.ProductService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Service
 public class ProductServiceImpl implements ProductService{
+
+    @Autowired
+    ProductDao productDao;
+
     private static Map<String, Product> productRepo = new HashMap<>();
     static {
         Product honey = new Product();
@@ -41,5 +48,15 @@ public class ProductServiceImpl implements ProductService{
     @Override
     public Collection<Product> getProducts() {
         return productRepo.values();
+    }
+
+    @Override
+    public List<Product> findAllProducts() {
+        try {
+            return productDao.findAllProducts();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 }

@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Collection;
+import java.util.List;
 
 @RestController
 @RequestMapping(value="/product")
@@ -22,5 +23,10 @@ public class ProductController {
     @RequestMapping(path = "/getProducts")
     public ResponseEntity<Object> getProducts(){
         return new ResponseEntity<>(productService.getProducts(), HttpStatus.OK);
+    }
+
+    @RequestMapping(path = "/findAllProducts")
+    public List<Product> findAllProducts() {
+        return productService.findAllProducts();
     }
 }
