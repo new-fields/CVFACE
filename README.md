@@ -1,10 +1,10 @@
-##cvface-fe
+## cvface-fe
 
-###项目介绍
+### 项目介绍
 
 人脸识别系统业务API
 
-###使用技术
+### 使用技术
 
 springboot
 
@@ -14,7 +14,7 @@ mysql
 
 gradle
 
-###目录结构
+### 目录结构
 ```shell
 ├── src                                    // 项目源码，包含程序源码和测试源码
 │   ├── main                    
