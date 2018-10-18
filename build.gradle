@@ -53,4 +53,6 @@ dependencies {
     compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.47'
     //配置mybatis 数据源
     compile group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-starter', version: '1.3.2'
+    //添加对RXTXcomm.jar文件依赖，开发基于RXTXcomm.jar的串口通信
+    compile group: 'org.bidib.jbidib.org.qbang.rxtx', name: 'rxtxcomm', version: '2.2'
 }
